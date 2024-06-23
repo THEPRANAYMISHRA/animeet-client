@@ -1,0 +1,46 @@
+<app-navbar></app-navbar>
+<main class="vh-100 d-flex gap-2 m-2 mymainconatiner">
+  <div
+    class="d-flex flex-column w-50 px-5 align-items-start justify-content-center"
+  >
+    <h1>✨</h1>
+    <h1>Premium video meetings</h1>
+    <h1>Now free for everyone.</h1>
+    <p class="fs-5">A meeting web app that is created with 💖 in India.</p>
+    <button class="btn btn-primary" (click)="startNewMeet()">New Meet</button>
+    <p class="my-2 fs-5">Or</p>
+    <form action="" class="d-flex flex-column my-2 gap-3" (submit)="joinMeet()">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter Meet Code"
+        [(ngModel)]="roomIdInput"
+        [ngModelOptions]="{ standalone: true }"
+      />
+      <input
+        type="email"
+        class="form-control"
+        placeholder="Enter Your Email"
+        [(ngModel)]="emailIdInput"
+        [ngModelOptions]="{ standalone: true }"
+      />
+      <button class="btn btn-sm btn-primary">Join</button>
+    </form>
+  </div>
+  <div
+    class="d-flex flex-column justify-content-center align-items-center w-50 p-2"
+  >
+    <div class="d-flex justify-content-center align-items-center gap-1">
+      <button class="btn btn-light" (click)="previous()"><</button>
+      <!-- /////////right side//////////// -->
+      <div
+        class="d-flex flex-column justify-content-center align-items-center gap-3"
+      >
+        <img src="{{ images[count].url }}" class="featuresImg" />
+        <p class="fs-4 featuresPara">{{ images[count].caption }}</p>
+      </div>
+      <!-- /////////right side//////////// -->
+      <button class="btn btn-light" (click)="next()">></button>
+    </div>
+  </div>
+</main>

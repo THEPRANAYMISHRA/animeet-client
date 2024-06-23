@@ -1,0 +1,26 @@
+.video-container {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: fixed;
+  top: 0;
+  height: 90% !important;
+}
+
+.video-container > video {
+  width: 50%;
+  height: 50%;
+  border-radius: 1rem;
+  background-color: wheat;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+footer {
+  position: fixed;
+  bottom: 0px;
+  height: 10% !important;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  padding: 1rem;
+}

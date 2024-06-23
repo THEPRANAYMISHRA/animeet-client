@@ -1,0 +1,13 @@
+@media screen and (max-width: 700px) {
+  .mymainconatiner {
+    flex-direction: column;
+  }
+
+  .mymainconatiner > div {
+    width: 100% !important;
+  }
+
+  .featuresImg {
+    width: 150px;
+  }
+}
